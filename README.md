@@ -1,8 +1,20 @@
-# 💼 DevFreelance Dashboard
+## 🎯 Sobre o Projeto
 
-Dashboard financeiro moderno para freelancers e desenvolvedores, construído com React + TypeScript + Tailwind.
+Este projeto foi desenvolvido como prática avançada durante minha transição do front-end tradicional (HTML, CSS e jQuery) para o ecossistema moderno React.
 
----
+O objetivo principal foi aprofundar conhecimentos em:
+
+- Arquitetura de componentes
+- React Hooks
+- TypeScript
+- Responsividade avançada
+- Visualização de dados com Recharts
+- Estruturação escalável de aplicações SPA
+- Performance mobile-first
+
+Durante o desenvolvimento utilizei IA generativa como ferramenta de apoio técnico e aprendizado, principalmente para explorar padrões modernos de arquitetura, organização de componentes e otimizações de UI/UX.
+
+Todo o projeto foi adaptado, estudado e evoluído manualmente como parte do processo de aprendizado prático.
 
 ## 🚀 Preview
 
