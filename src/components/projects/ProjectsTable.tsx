@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { projectsMock } from '../../mock/projectsMock';
 import { useLanguage } from '../../hooks/useLanguage';
 import { Search, Filter, CheckCircle2, Clock, Briefcase } from 'lucide-react';

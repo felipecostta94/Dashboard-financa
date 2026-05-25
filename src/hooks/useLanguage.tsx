@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, type ReactNode } from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 import { translations } from '../mock/localeMock';
 import type { Language } from '../mock/localeMock';
 
