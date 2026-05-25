@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { projectsMock } from '../../mock/projectsMock';
 import { useLanguage } from '../../hooks/useLanguage';
-import { Search, Filter, CheckCircle2, Clock, Briefcase } from 'lucide-react';
+import { Search, CheckCircle2, Clock } from 'lucide-react';
 
 export default function ProjectsTable() {
   const { language } = useLanguage();
