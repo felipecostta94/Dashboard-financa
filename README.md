@@ -1,7 +1,6 @@
 1. Estrutura de Pastas e Arquivos
 O projeto segue o padrão modular do React com Vite, organizando componentes por domínio de responsabilidade:
 
-Plaintext
 src/
 ├── components/
 │   ├── dashboard/
