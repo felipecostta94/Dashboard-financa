@@ -1,7 +1,6 @@
-```markdown
-### 📂 1. Estrutura de Pastas e Arquivos
+📂 1. Estrutura de Pastas e Arquivos
 
-```text
+```txt
 src/
 ├── components/
 │   ├── dashboard/
@@ -22,6 +21,7 @@ src/
 ├── App.tsx                      # Componente raiz, gerenciador de estado e fluxo de layout
 ├── index.css                    # Estilos globais e reset de viewports (Tailwind CSS)
 └── main.tsx                     # Ponto de entrada do React
+```
 
 2. Decisões de Design de Layout e Responsividade
 O maior desafio técnico do front-end deste projeto foi alinhar e estabilizar o comportamento elástico dos gráficos e do posicionamento em múltiplos dispositivos. As soluções aplicadas foram:
