@@ -23,7 +23,7 @@ src/
 └── main.tsx                     # Ponto de entrada do React
 ```
 
-2. Decisões de Design de Layout e Responsividade
+🧱 2. Decisões de Design de Layout e Responsividade
 O maior desafio técnico do front-end deste projeto foi alinhar e estabilizar o comportamento elástico dos gráficos e do posicionamento em múltiplos dispositivos. As soluções aplicadas foram:
 
 Isolamento de Viewport Global (index.css): O HTML e o Body foram travados em width: 100% e overflow-x-hidden para neutralizar vazamentos de pixels causados pela largura da barra de rolagem do Windows, matando frestas brancas de fundo.
@@ -36,7 +36,7 @@ Mobile-First com Hardware Control (MobileNav.tsx): O menu mobile utiliza proprie
 
 Tabelas Anti-Esmagamento (ProjectsTable.tsx): Aplicação de whitespace-nowrap e larguras mínimas nas colunas de texto para garantir leitura perfeita sem quebras de linha feias em telas pequenas.
 
-3. Regras de Negócio e Cálculos Dinâmicos
+🧮 3. Regras de Negócio e Cálculos Dinâmicos
 Toda a inteligência do App.tsx baseia-se no consumo dos dados consolidados no arquivo de mock. A partir dele, o sistema filtra e reduz os valores em tempo real para alimentar a interface:
 
 Saldo em Caixa: Soma o valor de todos os projetos marcados estritamente com o status de pagos (status === 'paid').
@@ -45,7 +45,7 @@ A Receber: Mapeia e acumula o montante de notas emitidas que ainda constam como 
 
 Reserva de Impostos (ME): Calcula automaticamente a alíquota base de 6% sobre o faturamento total recebido, simulando o desconto mensal unificado do DAS para desenvolvedores enquadrados no Anexo III do Simples Nacional.
 
-4. Stack Tecnológica Utilizada
+🛠️ 4. Stack Tecnológica Utilizada
 React 18 (Biblioteca SPA para interfaces reativas)
 
 TypeScript (Tipagem estática para maior segurança no fluxo de dados)
