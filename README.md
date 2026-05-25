@@ -18,9 +18,7 @@ Todo o projeto foi adaptado, estudado e evoluído manualmente como parte do proc
 
 ## 🚀 Preview
 
-<p align="center">
-  <img src="./public/preview.png" width="100%" />
-</p>
+> **Acesse a versão em produção aqui:** [https://dashboard-financa-jmyn.vercel.app](https://dashboard-financa-jmyn.vercel.app)
 
 ---
 
