@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
+# 💼 DevFreelance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard financeiro moderno para freelancers e desenvolvedores, construído com React + TypeScript + Tailwind.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Preview
 
-## React Compiler
+<p align="center">
+  <img src="./public/preview.png" width="100%" />
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📊 Dashboard financeiro responsivo
+- 📈 Gráficos dinâmicos com Recharts
+- 🌍 Sistema de idiomas (PT/EN)
+- 📱 Navegação mobile otimizada
+- 💰 Simulação de impostos (ME - Anexo III)
+- ⚡ Interface performática e mobile-first
+- 🎨 Layout moderno inspirado em SaaS dashboards
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologias
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Tecnologia | Uso |
+|---|---|
+| React 18 | Interface SPA |
+| TypeScript | Tipagem estática |
+| Tailwind CSS | Estilização |
+| Recharts | Visualização de dados |
+| Lucide React | Ícones |
+| Vite | Build tool |
+
+---
+
+## 📂 Estrutura do Projeto
+
+```txt
+src/
+├── components/
+├── hooks/
+├── mock/
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Decisões Técnicas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Blindagem de gráficos SVG
+
+Os gráficos foram encapsulados em containers com altura rígida para impedir overflow e quebra do layout responsivo.
+
+### Mobile Performance
+
+O menu mobile utiliza aceleração por GPU com:
+
+```css
+transform: translateZ(0);
+will-change: transform;
 ```
+
+### Sidebar independente
+
+A sidebar desktop utiliza posicionamento fixo para manter navegação estável enquanto o conteúdo principal rola separadamente.
+
+---
+
+## 📸 Screenshots
+
+### Dashboard
+
+<p align="center">
+  <img src="./public/dashboard.png" width="100%" />
+</p>
+
+### Mobile
+
+<p align="center">
+  <img src="./public/mobile.png" width="40%" />
+</p>
+
+---
+
+## ⚙️ Instalação
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Rodando o projeto
+
+```bash
+npm run dev
+```
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto foi criado para praticar:
+
+- Arquitetura React escalável
+- Componentização
+- Responsividade avançada
+- Gerenciamento de estado
+- Performance mobile
+- Visualização de dados
+- UX/UI para dashboards
+
+---
+
+## 📌 Status
+
+🚧 Em evolução contínua
+
+Novas features e melhorias estão sendo implementadas constantemente.
